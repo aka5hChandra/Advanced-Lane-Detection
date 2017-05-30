@@ -5,7 +5,7 @@
 
 [//]: # (Image References)
 
-[image1]: ./ouput_images/undistorated.jpg "Undistorted"
+[image1]: ./output_images/undistorated.jpg "Undistorted"
 [image2]: ./output_images/test1.jpg "Road Transformed"
 [image3]: ./output_images/threshold.jpg "Binary Example"
 [image4]: ./output_images/warped.jpg "Warp Example"
@@ -70,7 +70,7 @@ I implemented this step in lines 497 through 503 in my code in cell 3 in the fun
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./output/project_video.mp4)
 
 ---
 
