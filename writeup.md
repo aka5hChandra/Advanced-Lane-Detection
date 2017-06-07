@@ -77,4 +77,8 @@ Here's a [link to my video result](./output/project_video.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-The major problem I have faced is in finding the perfect threshold of image , my thresholding pipeline fails to find the lane lines when there is heavy shadow or relativly brigther road, as a consequance polynomial fit fails and which is evident in wobbling of lane in vedio.
+The major problem I have faced was in finding the perfect threshold of image , my thresholding pipeline fails to find the lane lines when there is heavy shadow or relativly brigther road, as a consequance polynomial fit fails and which is evident in wobbling of lane in vedio.
+
+I have changed my thresholding method as suggested by reviewer, and it works like charm, the threshold of image is perfect, as a result I obtain a better polynomial fit and hence we see that there is no more flickering of lane lines now. 
+
+The one other issue was that, I was applying Hough line detection to find the lane line and use the corners of the detected lane lines as the source points of perspective warp, the line detection was not consistant in each frame and as result lane polygon was flikcering. Hence I resorted to hardcoding of source points. As a further devlopment , I could work on impoving Hough line detection for automatic source point estimation.
